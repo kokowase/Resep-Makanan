@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<br/>
+<div class="container">
+
+    <form method="POST">
+        {% csrf_token %}
+        <h4>Masukan Resep secara lengkap</h4><hr/>
+            <p><div class="row"><div class="col-md-3">Nama Resep: </div><div class="col-md-3">{{form.nama_resep}}</div></div></p>
+            <p><div class="row"><div class="col-md-3">Kategori Resep: </div><div class="col-md-3">{{form.id_kategori}}</div></div></p>
+            <div class="row"><div class="col-md-3">Bahan Resep: </div><div class="col-md-3">{{form.id_bahan}}</div></div>
+           
+    
+            <button type="submit" class="btn btn-success" >Submit</button>
+        </form>
+</div>
+
+{% endblock %}

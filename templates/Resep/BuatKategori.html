@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<br/>
+<div class="container">
+
+    <form method="POST">
+        {% csrf_token %}
+        <h4>Masukan data secara lengkap</h4><hr/>
+            <p><div class="row"><div class="col-md-3">Nama Kategori: </div><div class="col-md-3">{{form.nama_kategori}}</div></div></p>
+    
+            <button type="submit"  class="btn btn-success">Submit</button>
+        </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load humanize %}
+{% block content %}
+
+<div class="container mt-4">
+    <h5>Detail Resep Makanan :</h5>
+
+   
+
+        <hr/>
+        <p>
+          <div class="row">
+            <div class="col-md-3">Nama Resep:</div>
+            <div class="col-md-3"><input type="text" name="nib" class="form-control" value="{{ resep.nama_resep }}" readonly></div>
+          </div>
+        </p>
+      
+        <p>
+          <div class="row">
+            <div class="col-md-3">Bahan Bahan:</div>
+            <div class="col-md-3">
+              <ul>
+                {% for id_bahan in resep.id_bahan.all %}
+                  <li>{{id_bahan.nama_bahan}}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </p>
+
+        
+        <p>
+          <div class="row">
+            <div class="col-md-3">Kategori:</div>
+            <div class="col-md-3"><input type="text" name="kategori" class="form-control" value="{{ resep.id_kategori.nama_kategori }}" readonly></div>
+          </div>
+        </p>
+        
+        <p>
+          <div class="row">
+            <div class="col-md-3">Takaran:</div>
+            <div class="col-md-3">
+            <textarea name="permasalahan" value="{{ resep.takaran }}" class="form-control" rows="5" cols="40" width: 100%;" readonly>{{resep.takaran}}</textarea>
+            </div>
+        </div>
+        </p>
+      
+        
+        <hr/>
+
+      
+      
+
+
+</div>
+
+
+
+{% endblock %}

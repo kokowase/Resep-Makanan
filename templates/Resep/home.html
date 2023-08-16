@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block content %} {% load humanize %}
+
+    <div class="container mt-4">
+
+       
+        <h2 class="mt-4">Daftar Resep Makanan</h2>
+        
+      
+        <table class="table table-bordered">
+        
+
+        
+          <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Resep</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for i in resep %}
+              <tr>
+                <td>{{forloop.counter}}</td>
+                <td><a href={% url 'detail_resep' i.id %}>{{i.nama_resep}}</a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+            
+          </table>
+    </div>
+{% endblock %}
