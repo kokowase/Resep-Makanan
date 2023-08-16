@@ -49,58 +49,32 @@ Proyek ini juga memperlihatkan penggunaan data master bahan dan kategori.
       PUT /api/kategori/{id}/
     - Hapus Kategori
       DELETE /api/kategori/{id}/
-4. Penggunaan Filter dan Pencarian Resep berdasarkan kategori dan bahan
-   Parameter Query:
-    - nama_bahan: Filter resep berdasarkan nama bahan yang digunakan.
-    - nama_kategori: Filter resep berdasarkan nama kategori.
-    - nama_resep: Filter resep berdasarkan nama resep.
-      - GET /api/resep/?nama_bahan=telor
-      JSON Response:
-                    {
-        "id": 2,
-        "nama_resep": "Nasi Telor Spesial",
-        "bahan": [
-            "Bawang Putih",
-            "Bawang Merah",
-            "Minyak",
-            "Nasi Putih",
-            "Daun Bawang",
-            "Telor 2"
-          ],
-            "kategori": "Main Course"
-        }
-     - GET /api/resep/?nama_kategori=main
-       JSON Response:
-       {
-        "id": 2,
-        "nama_resep": "Nasi Telor Spesial",
-        "bahan": [
-            "Bawang Putih",
-            "Bawang Merah",
-            "Minyak",
-            "Nasi Putih",
-            "Daun Bawang",
-            "Telor 2"
-          ],
-            "kategori": "Main Course"
-        }
-    - GET /api/resep/?nama_resep=nasi telor
-      JSON Response:
-       {
-        "id": 2,
-        "nama_resep": "Nasi Telor Spesial",
-        "bahan": [
-            "Bawang Putih",
-            "Bawang Merah",
-            "Minyak",
-            "Nasi Putih",
-            "Daun Bawang",
-            "Telor 2"
-          ],
-            "kategori": "Main Course"
-        }
-    Jika ingin menggunakan parameter lebih dari satu maka gunakan "&" diantara parameter
-    - GET /api/resep/?nama_resep=nasi telor&nama_bahan=minyak&nama_kategori=main
+## Penggunaan Filter dan Pencarian Resep
+
+  Anda dapat menggunakan filter dan pencarian untuk menemukan resep berdasarkan nama bahan, nama kategori, atau nama resep. Berikut adalah contoh penggunaannya:
+
+### Filter Berdasarkan Nama Bahan
+
+**Endpoint: `/api/resep/`**
+GET /api/resep/?nama_bahan=telor
+
+**JSON Response:**
+```json
+{
+    "id": 2,
+    "nama_resep": "Nasi Telor Spesial",
+    "bahan": [
+        "Bawang Putih",
+        "Bawang Merah",
+        "Minyak",
+        "Nasi Putih",
+        "Daun Bawang",
+        "Telor 2"
+    ],
+    "kategori": "Main Course"
+}
+
+
   
 
     
