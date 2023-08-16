@@ -11,6 +11,27 @@ Proyek ini juga memperlihatkan penggunaan data master bahan dan kategori.
 -API CRUD data Resep  
 -API CRUD menampilkan lis/index berdasarkan filter bahan dan kategori  
 
+### Instalasi
+1. Pastikan Anda memiliki Python dan Django terinstal di sistem Anda.  
+2. Clone repositori ini:  
+
+   ```bash
+   git clone https://github.com/kokowase/resep-makanan.git
+   ```  
+3. Buat dan aktifkan virtual environment (opsional, tetapi disarankan):  
+  `python -m venv venv `  
+  Aktifkan virtual environment di windows  
+  `venv/Scripts/activate`  
+  Aktifkan virtual environment di linux    
+  `source venv/bin/activate`  
+4. Install dependensi:  
+  `pip install -r requirements.txt`  
+5. Jalankan migrasi:  
+  `python manage.py migrate`  
+6. Jalankan server:  
+  `python manage.py runserver`  
+
+
 # Dokumentasi API
 
 1. Resep
