@@ -56,7 +56,7 @@ Proyek ini juga memperlihatkan penggunaan data master bahan dan kategori.
     - nama_resep: Filter resep berdasarkan nama resep.
       - GET /api/resep/?nama_bahan=telor
       JSON Response:
-                    {
+                    [
         "id": 2,
         "nama_resep": "Nasi Telor Spesial",
         "bahan": [
@@ -68,7 +68,7 @@ Proyek ini juga memperlihatkan penggunaan data master bahan dan kategori.
             "Telor 2"
           ],
             "kategori": "Main Course"
-        }
+        ]
      - GET /api/resep/?nama_kategori=main
        JSON Response:
        {
