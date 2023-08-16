@@ -60,7 +60,6 @@ Proyek ini juga memperlihatkan penggunaan data master bahan dan kategori.
         "id": 2,
         "nama_resep": "Nasi Telor Spesial",
         "bahan": [
-      
             "Bawang Putih",
             "Bawang Merah",
             "Minyak",
@@ -76,7 +75,6 @@ Proyek ini juga memperlihatkan penggunaan data master bahan dan kategori.
         "id": 2,
         "nama_resep": "Nasi Telor Spesial",
         "bahan": [
-      
             "Bawang Putih",
             "Bawang Merah",
             "Minyak",
@@ -92,7 +90,6 @@ Proyek ini juga memperlihatkan penggunaan data master bahan dan kategori.
         "id": 2,
         "nama_resep": "Nasi Telor Spesial",
         "bahan": [
-      
             "Bawang Putih",
             "Bawang Merah",
             "Minyak",
